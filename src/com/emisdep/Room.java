@@ -60,7 +60,7 @@ public class Room {
         this.needsCleaning = needsCleaning;
     }
 
-    public boolean reserve(String room){
+    public boolean reserve(Client room){
         if(!(occupied && needsCleaning)){
             occupied = true;
             return true;
